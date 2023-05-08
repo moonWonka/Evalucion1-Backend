@@ -32,6 +32,7 @@ header {
 
 /* fin logo */
 
+
 .contenedor-volver {
     display: flex;
     justify-content: center;
@@ -44,4 +45,21 @@ header {
     width: 200px;
     height: 50px;
     font-weight: bold;
+}
+
+.datos-usuario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin:20px;
+}
+
+.info {
+    margin-top: 20px;
+    width: 100%;
+    height: 100px;
+    text-align: center;
 }

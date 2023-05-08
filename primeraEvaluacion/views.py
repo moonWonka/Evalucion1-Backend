@@ -9,13 +9,13 @@ def index(request):
     return render(request, 'template/index.html')
 
 def usuario(request):
-    documento = open("plantilla/template/usuario.html")
+    documento = open("plantillas/template/usuario.html")
     plt = Template(documento.read())
 
     documento.close()
 
     ctx = Context({
-        "nombre": "Juan",
+        "nombre": "Juanita",
         "apellido": "Perez", 
         "edad": 25, 
         "fecha": datetime.datetime.now()
@@ -57,16 +57,19 @@ def productos(request):
                 {
                     "producto": "Camiseta",
                     "descripcion": "Camiseta de algodón para hombres",
+                    "imagen" : "ropa/camisa.jpg",
                     "precio": 14990
                 },
                 {
                     "producto": "Pantalon",
                     "descripcion": "Pantalón de mezclilla para mujeres",
+                    "imagen" : "ropa/pantalon.jpg",
                     "precio": 29990
                 },
                 {
                     "producto": "Zapatos",
                     "descripcion": "Zapatos de vestir para hombres",
+                    "imagen" : "ropa/zapato.jpg",
                     "precio": 59990
                 }
             ]
@@ -75,19 +78,22 @@ def productos(request):
             "nombre": "juguetes",
             "items": [
                 {
-                    "producto": "Carro",
-                    "descripcion": "Carro de juguete para niños",
-                    "precio": 4990
+                    "producto": "Yoshi",
+                    "descripcion": "Figura de acción de Yoshi con sonido",
+                    "imagen" : "juguetes/saurio.jpg",
+                    "precio": 62990
                 },
                 {
-                    "producto": "Muñeca",
-                    "descripcion": "Muñeca de trapo para niñas",
-                    "precio": 9990
+                    "producto": "Baby Yoda",
+                    "descripcion": "Peluche Matel Star Wars Baby Yoda",
+                    "imagen" : "juguetes/yoda.jpg",
+                    "precio": 35000
                 },
                 {
-                    "producto": "Pelota",
-                    "descripcion": "Pelota de fútbol para niños",
-                    "precio": 2990
+                    "producto": "Peluche Wookie",
+                    "descripcion": "Peluhe Star Wars Wookie de 25 cm",
+                    "imagen" : "juguetes/wookie.jpg",
+                    "precio": 27990
                 }
             ]
         },

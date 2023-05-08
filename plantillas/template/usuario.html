@@ -23,7 +23,20 @@
     </header>
 
     <main>
-        <h1>{{nombre}}</h1>
+        <div class="info">
+            <h1>Datos del usuario</h1>
+        </div>
+        <div class="datos-usuario">
+            <div class="card" style="width: 18rem;">
+                <img src="{% static 'images/usuario/persona.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h3>{{nombre}}</h1>
+                    <h3>{{apellido}}</h1>
+                    <h3>{{edad}}</h1>
+                    <h3>{{fecha}}</h3>            
+                </div>
+              </div>
+        </div>
     </main>
 
     <div class="contenedor-volver">

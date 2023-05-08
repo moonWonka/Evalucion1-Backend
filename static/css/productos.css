@@ -57,6 +57,7 @@ header {
     justify-content: center;
     align-items: center;
     background-color: #d3d3d4;
+    text-transform: capitalize;
 
 }
 
@@ -84,4 +85,13 @@ header {
     width: 200px;
     height: 50px;
     font-weight: bold;
+}
+
+.fecha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    margin: 15px;
 }
